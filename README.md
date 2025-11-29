@@ -1,105 +1,266 @@
-# py-clash-bot
+<div align="center">
 
-**py-clash-bot** is an open-source automation tool that allows you to automate your Clash Royale gameplay on Windows and macOS using an emulated Android phone. The bot uses advanced image recognition, mouse control, and Android emulation to perform a comprehensive range of tasks automatically, letting you focus on strategy while it handles the daily grind.
+# 🎮 py-clash-bot
 
-_Join our [Discord server](https://discord.gg/nqKRkyq2UU) for support, updates, and community discussions!_
+### *Automated Clash Royale Gameplay - Powered by AI*
+
+[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/nqKRkyq2UU)
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-Open%20Source-green)](https://github.com/pyclashbot/py-clash-bot)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS-lightgrey)](https://github.com/pyclashbot/py-clash-bot)
+
+**Open-source automation tool for Clash Royale** using advanced image recognition, intelligent card placement, and seamless Android emulation integration.
+
+[**Download Latest Release**](https://github.com/pyclashbot/py-clash-bot/releases) • [**Join Discord**](https://discord.gg/nqKRkyq2UU) • [**Report Issues**](https://github.com/pyclashbot/py-clash-bot/issues)
+
+---
+
+</div>
+
+---
 
 ## ✨ Features
 
-### 🎮 **Battle Automation**
+<table>
+<tr>
+<td width="50%">
 
-- **Trophy Road 1v1 Battles** - Automatically fight in trophy road ladder matches
-- **Path of Legends 1v1 Battles** - Battle in the competitive Path of Legends mode
-- **2v2 Battles** - Team up with clan members for 2v2 matches
-- **Random Decks** - Randomize your deck selection before each battle
-- **Smart Battle Management** - Skip fights when chests are full, disable win/loss tracking
+### ⚔️ **Battle Automation**
 
-### 🎁 **Rewards & Collection**
+- **🏆 Trophy Road 1v1** - Climb the ladder automatically
+- **🌟 Path of Legends** - Competitive ranked battles
+- **👥 2v2 Matches** - Team battles with clanmates
+- **🎲 Random Decks** - Auto-randomize before each battle
+- **🧠 Smart AI**:
+  - **Strategic Mode**: Intelligent elixir management with phase-based card selection
+  - **Random Mode**: Fast mag-dump plays - randomly spam cards every 8 seconds for quick battles
 
-- **Card Mastery Rewards** - Collect mastery rewards earned from battles
-- **Card Upgrades** - Upgrade your current deck after each battle
+</td>
+<td width="50%">
 
-### ⚙️ **Advanced Settings**
+### 🎁 **Rewards & Management**
 
-- **Emulator Support** - Works with MEmu, BlueStacks 5, and Google Play Games emulators
-- **Render Mode Selection** - Choose between OpenGL, DirectX, and Vulkan rendering
-- **Real-time Statistics** - Track wins, losses, chests opened, and more
-- **Performance Monitoring** - Monitor bot runtime, failures, and account switches
+- **💎 Card Mastery** - Auto-collect mastery rewards
+- **⬆️ Card Upgrades** - Upgrade cards after battles
+- **♻️ Deck Cycling** - Switch between 10 saved decks
+- **📊 Real-time Stats** - Track W/L, chests, upgrades
+- **⚙️ Smart Logic** - Skip fights when chests full
 
-## 🚀 Setup Instructions
+</td>
+</tr>
+</table>
 
-**py-clash-bot** supports three emulators. Choose the one that works best for your system:
+### 🖥️ **Platform Support**
 
-### Option 1: MEmu Emulator
+| Emulator | Windows | macOS | Notes |
+|----------|---------|-------|-------|
+| **Google Play Games** | ✅ | ❌ | Easiest setup, recommended for beginners |
+| **MEmu 9.2.5.0** | ✅ | ❌ | Requires UEFI + Hyper-V in BIOS |
+| **BlueStacks 5** | ✅ | ✅ | Cross-platform, stable performance |
 
-1. **Download MEmu 9.2.5.0** - Get it from the [official site](https://www.memuplay.com/) or use this [working installer](https://drive.google.com/file/d/1FDMa5oKIhbM_X2TGHg6qSi3bnIuIXcPf/view?usp=sharing) (version 9.2.5.0 recommended)
-2. **Install MEmu** - Run the MEmu installer
-3. **Download py-clash-bot** - Get the latest release from [https://github.com/pyclashbot/py-clash-bot/releases](https://github.com/pyclashbot/py-clash-bot/releases)
-4. **Install py-clash-bot** - Run the installer
-5. **Create the VM** - Start the bot once to let it automatically create the "pyclashbot-96" MEmu emulator
-6. **Install Clash Royale** - Install Clash Royale manually on the "pyclashbot-96" emulator via Google Play Store
-7. **Complete setup** - Open Clash Royale manually, complete the tutorial, and optionally sign in to your account
-8. **Close MEmu** - Close the MEmu emulator completely
-9. **Start automation** - Start the bot, configure your settings, then click "Start" to begin automation
+---
 
-**Troubleshooting MEmu:**
-- Switch render mode to Vulkan, DirectX, or OpenGL if experiencing issues
-- Delete the VM and let the bot create a new one
-- Enable UEFI in BIOS if needed
+## 🚀 Quick Start Guide
 
-### Option 2: BlueStacks 5 Emulator
+> **📋 Requirements:** Python 3.12+ • Android Emulator • 4GB RAM • Windows/macOS
 
-1. **Download BlueStacks 5** - Get it from the official site: https://www.bluestacks.com (ensure BlueStacks 5, not X/10)
-2. **Install BlueStacks 5** - Run the BlueStacks 5 installer
-3. **Download py-clash-bot** - Get the latest release from [https://github.com/pyclashbot/py-clash-bot/releases](https://github.com/pyclashbot/py-clash-bot/releases)
-4. **Install py-clash-bot** - Run the installer
-5. **Create the instance** - Start the bot, choose `Emulator Type: BlueStacks 5`, select a render mode (OpenGL/DirectX/Vulkan) under BlueStacks Settings and then click "Start" to let it automatically create the "pyclashbot-96" Bluestacks 5 emulator Instance. Alternativly open the BlueStacks Multi-Instance Manager and create a fresh Pie 64-bit instance and retry it will automatically rename/configure it as "pyclashbot-96"
-6. **Install Clash Royale** - Install Clash Royale manually on the "pyclashbot-96" emulator via Google Play Store
-7. **Complete setup** - Open Clash Royale manually, complete the tutorial, and optionally sign in to your account
-8. **Close BlueStacks 5** - Fully close the BlueStacks 5 emulator
-9. **Start automation** - Start the bot, choose `Emulator Type: BlueStacks 5`, select a render mode (OpenGL/DirectX/Vulkan) under BlueStacks Settings, then click "Start"
+### Step 1️⃣: Choose Your Emulator
 
-**Troubleshooting BlueStacks 5:**
-- Open the Bluestacks Multi-Instance Manger -> Click on Instance (Blue, Bottom left) -> Choose Fresh instance -> Choose Android Version Pie 64-bit -> Click on Next -> Click on Create, then click Retry in the bot or restart it fully.
-- Try switching render mode (OpenGL/DirectX/Vulkan) in the bot and start again
-- Restart your PC and let the bot try it again
+<details open>
+<summary><b>🎯 Google Play Games (Recommended - Easiest)</b></summary>
 
-### Option 3: Google Play Games Emulator
+```powershell
+# 1. Download from official site
+https://developer.android.com/games/playgames/emulator
 
-1. **Download Google Play Games Emulator** - Get it from [https://developer.android.com/games/playgames/emulator](https://developer.android.com/games/playgames/emulator)
-2. **Install the emulator** - Run the Google Play installer
-3. **Initial setup** - Boot the Google Play Games Emulator once. This will trigger a Google sign-in flow in your web browser - complete this process. If prompted to allow USB debugging, click "Accept"
-4. **Download py-clash-bot** - Get the latest release from [https://github.com/pyclashbot/py-clash-bot/releases](https://github.com/pyclashbot/py-clash-bot/releases)
-5. **Install Clash Royale** - Download Clash Royale manually from the emulator
-6. **Complete setup** - Start Clash Royale manually, complete the tutorial, and optionally sign in to your account
-7. **Optional: Set display ratio** - Go to Google Play Emulator > Developer Options > Display Ratio > 9:16 (Portrait) for optimal look
-8. **Close emulator** - Close the Google Play emulator completely
-9. **Start automation** - Start the bot, configure your settings, then click "Start" to begin automation
+# 2. Install and complete Google sign-in
+# 3. Accept USB debugging when prompted
+# 4. Install Clash Royale from emulator
+# 5. Complete tutorial manually
+# 6. Close emulator
+```
 
-## 🍎 macOS Setup
+**✅ Pros:** Simple setup, official Google emulator  
+**⚠️ Cons:** Windows only
 
-On macOS, py-clash-bot supports BlueStacks. The setup is similar to Windows but requires an additional security step.
+</details>
 
-### BlueStacks for macOS
+<details>
+<summary><b>💎 MEmu 9.2.5.0 (Advanced)</b></summary>
 
-1. **Download BlueStacks** - Get it from [https://www.bluestacks.com/mac](https://www.bluestacks.com/mac)
-2. **Install BlueStacks** - Run the BlueStacks installer
-3. **Download py-clash-bot** - Get the latest DMG from [https://github.com/pyclashbot/py-clash-bot/releases](https://github.com/pyclashbot/py-clash-bot/releases)
-4. **Install py-clash-bot** - Open the DMG and drag py-clash-bot to your Applications folder
-5. **Allow the app** - On first launch, macOS will block the app since it's not signed. Go to **System Settings → Privacy & Security** and click "Allow" or "Open Anyway" for py-clash-bot
-6. **Create the instance** - Start the bot and click "Start" to let it automatically create the BlueStacks instance
-7. **Install Clash Royale** - Install Clash Royale manually on the emulator via Google Play Store
-8. **Complete setup** - Open Clash Royale manually, complete the tutorial, and optionally sign in to your account
-9. **Close BlueStacks** - Fully close the BlueStacks emulator
-10. **Start automation** - Start the bot, configure your settings, then click "Start" to begin automation
+```powershell
+# 1. Download MEmu 9.2.5.0
+https://www.memuplay.com/
 
-### Important Notes
+# 2. BIOS Requirements (CRITICAL)
+- Enable UEFI
+- Enable Hyper-V
 
-- **Language Setting** - Ensure Clash Royale is set to English for optimal bot performance
-- **Tutorial Completion** - The tutorial must be completed manually before starting the bot
-- **Account Setup** - Sign in with SuperCell ID or create a new account as needed
+# 3. Let bot auto-create "pyclashbot-96" VM
+# 4. Install Clash Royale manually
+# 5. Complete tutorial
+# 6. Close MEmu
+```
 
-## 🔧 Emulator Debugging
+**✅ Pros:** Powerful, feature-rich  
+**⚠️ Cons:** Requires BIOS configuration, hardware-intensive
+
+</details>
+
+<details>
+<summary><b>🌟 BlueStacks 5 (Cross-Platform)</b></summary>
+
+```powershell
+# 1. Download BlueStacks 5 (NOT X/10)
+https://www.bluestacks.com/
+
+# 2. Let bot auto-create "pyclashbot-96" instance
+#    OR manually create "Pie 64-bit" instance
+# 3. Install Clash Royale
+# 4. Complete tutorial
+# 5. Close BlueStacks
+```
+
+**✅ Pros:** Works on Windows & macOS, stable  
+**⚠️ Cons:** Slightly slower than MEmu
+
+</details>
+
+---
+
+### Step 2️⃣: Install py-clash-bot
+
+```powershell
+# Clone or download the repository
+cd py-clash-bot-master
+
+# Install dependencies
+py -m pip install -e .
+
+# Launch the bot
+py -m pyclashbot
+```
+
+---
+
+### Step 3️⃣: Configure & Start
+
+1. **Select Emulator Type** from dropdown
+2. **Choose Fight Mode**: 1v1, 2v2, Trophy Road
+3. **Enable Jobs** (optional):
+   - ✅ Card Upgrades
+   - ✅ Card Mastery Collection
+   - ✅ Deck Randomization
+4. **Select Play Style**:
+   - 🧠 **Strategic**: Smart elixir management, phase-based tactics
+   - 🎲 **Random**: Fast spam mode (mag-dump cards every 8s)
+5. **Click START** 🚀
+
+The bot handles everything: emulator restarts, battles, rewards, and deck management!
+
+---
+
+## 🎯 How It Works
+
+### 🤖 Battle AI Modes
+
+#### 🧠 **Strategic Mode** (Recommended)
+Intelligent card placement with dynamic elixir management:
+
+- **Phase Detection**: Adapts strategy based on battle time (early/single/double/triple elixir)
+- **Smart Elixir Thresholds**: Probabilistic card selection based on current elixir count
+- **Anti-Spam Logic**: Tracks recently played cards to avoid repetitive plays
+- **Card Classification**: Groups cards by type (spell, tank, spawner, etc.) for optimal placement
+- **Bridge Positioning**: Places troops at perfect offensive positions
+
+**Example Strategy:**
+```
+Early Phase (0-60s):  Only play at 5-9 elixir (defensive)
+Single Elixir:        Mixed aggression, 4-9 elixir plays
+Double Elixir:        Increased aggression, 5-9 elixir focus
+Triple Elixir:        Maximum pressure, 5-8 elixir spam
+```
+
+#### 🎲 **Random Mode** (Fast Grinding)
+Speed-focused auto-play for rapid chest farming:
+
+- **Mag Dump System**: Plays 1-3 random cards every 8 seconds
+- **No Strategy**: Pure card spam for fastest battles
+- **Quick Matches**: Ideal for chest slots/daily quests
+- **Zero Delay**: Ignores elixir, just spams available cards
+
+**Use Cases:**
+- ✅ Grinding chests quickly
+- ✅ Completing daily quests
+- ✅ Trophy dropping
+- ❌ Trophy pushing (use Strategic Mode)
+
+---
+
+## 🔧 Troubleshooting
+
+<details>
+<summary><b>⚠️ Google Play Games Issues</b></summary>
+
+**Black screen / Won't boot:**
+- Check for hidden browser popup (Google sign-in required)
+- Try: System Tray → Google Play Games → Graphics Settings → Vulkan Override
+- Run installer as admin: Task Manager → File → Run New Task → Browse to installer → "Run as admin"
+
+**USB Debugging not working:**
+- Restart emulator and watch for "Allow USB Debugging" prompt
+- Accept the prompt immediately
+
+</details>
+
+<details>
+<summary><b>⚠️ MEmu Issues</b></summary>
+
+**Black screen / Won't render:**
+- Switch render mode in bot GUI (Vulkan → DirectX → OpenGL)
+- Enable UEFI in BIOS: [Video Guide](https://www.youtube.com/watch?v=uAMLGIlFMdI)
+- Enable Hyper-V: [Microsoft Guide](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-hyper-v)
+
+**Corrupted VM:**
+- Delete "pyclashbot-96" VM from MEmu Multi-Instance Manager
+- Restart bot to auto-create fresh VM
+
+</details>
+
+<details>
+<summary><b>⚠️ BlueStacks 5 Issues</b></summary>
+
+**Wrong BlueStacks version:**
+- Ensure BlueStacks 5 (NOT BlueStacks X or 10)
+- Install path should be: `C:\Program Files\BlueStacks_nxt`
+
+**Instance creation failed:**
+- Open Multi-Instance Manager
+- Click "Instance" → "Fresh Instance" → "Pie 64-bit (Android 9)"
+- Let bot rename it to "pyclashbot-96"
+
+**Poor performance:**
+- Try different render modes (OpenGL/DirectX/Vulkan)
+- Allocate more RAM in BlueStacks settings
+
+</details>
+
+<details>
+<summary><b>⚠️ Bot Not Detecting Game</b></summary>
+
+**Clash Royale language:**
+- Set game to **English** (required for image recognition)
+
+**Screen resolution:**
+- Bot expects 419x633 resolution (auto-configured)
+- Don't manually resize emulator window
+
+**Tutorial incomplete:**
+- Complete the tutorial manually before starting bot
+
+</details>
+
+---
 
 Having trouble with your emulator? This section provides troubleshooting tips for common issues with all supported emulators.
 
@@ -129,25 +290,85 @@ Having trouble with your emulator? This section provides troubleshooting tips fo
 
 ## 🎯 Demo
 
-<img src="https://github.com/pyclashbot/py-clash-bot/blob/master/assets/demo-game.gif?raw=true" width="50%" alt="Game Demo"/><img src="https://github.com/pyclashbot/py-clash-bot/blob/master/assets/demo-gui.gif?raw=true" width="50%" alt="GUI Demo"/>
+<div align="center">
 
-_Left: Bot automation in action | Right: User interface and controls_
+<table>
+<tr>
+<td width="50%">
+<img src="https://github.com/pyclashbot/py-clash-bot/blob/master/assets/demo-game.gif?raw=true" width="100%" alt="Game Demo"/>
+<p align="center"><i>🎮 Battle automation in action</i></p>
+</td>
+<td width="50%">
+<img src="https://github.com/pyclashbot/py-clash-bot/blob/master/assets/demo-gui.gif?raw=true" width="100%" alt="GUI Demo"/>
+<p align="center"><i>🖥️ User interface and controls</i></p>
+</td>
+</tr>
+</table>
 
-## 🤝 Contributing
-
-We welcome contributions from the community! Whether you have ideas for new features, bug reports, or want to help with development, there are many ways to get involved:
-
-- **Report Issues** - Open an issue on [GitHub Issues](https://github.com/pyclashbot/py-clash-bot/issues)
-- **Feature Requests** - Suggest new automation features or improvements
-- **Code Contributions** - Check out our [Contributing Guide](CONTRIBUTING.md)
-- **Community Support** - Help other users on our [Discord server](https://discord.gg/nqKRkyq2UU)
-
-## ⚠️ Disclaimer
-
-This tool is designed for educational and automation purposes. Please ensure you comply with Clash Royale's Terms of Service and use responsibly. The developers are not responsible for any consequences resulting from the use of this software.
+</div>
 
 ---
 
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Whether you have ideas for new features, bug reports, or want to help with development:
+
+<table>
+<tr>
+<td align="center" width="25%">
+<br>
+<b>🐛 Report Issues</b><br><br>
+Found a bug?<br>
+<a href="https://github.com/pyclashbot/py-clash-bot/issues">Open an Issue</a>
+<br><br>
+</td>
+<td align="center" width="25%">
+<br>
+<b>💡 Feature Requests</b><br><br>
+Have an idea?<br>
+<a href="https://github.com/pyclashbot/py-clash-bot/issues">Suggest a Feature</a>
+<br><br>
+</td>
+<td align="center" width="25%">
+<br>
+<b>💻 Code Contributions</b><br><br>
+Want to code?<br>
+<a href="CONTRIBUTING.md">Contributing Guide</a>
+<br><br>
+</td>
+<td align="center" width="25%">
+<br>
+<b>💬 Community Support</b><br><br>
+Help others!<br>
+<a href="https://discord.gg/nqKRkyq2UU">Join Discord</a>
+<br><br>
+</td>
+</tr>
+</table>
+
+---
+
+## ⚠️ Disclaimer
+
+**Educational & Automation Purposes Only**
+
+This tool is designed for educational purposes and personal automation. Please ensure you comply with Clash Royale's Terms of Service. The developers are not responsible for any consequences resulting from the use of this software, including but not limited to account bans or suspensions.
+
+**Use at your own risk.** Bot usage may violate Supercell's Terms of Service and could result in account penalties.
+
+---
+
+<div align="center">
+
 **Made with ❤️ by the py-clash-bot community**
 
-_Automate your Clash Royale experience and focus on what matters most - strategy and fun!_
+*Automate your Clash Royale experience and focus on what matters most - strategy and fun!*
+
+[![Star this repo](https://img.shields.io/github/stars/pyclashbot/py-clash-bot?style=social)](https://github.com/pyclashbot/py-clash-bot)
+[![Fork this repo](https://img.shields.io/github/forks/pyclashbot/py-clash-bot?style=social)](https://github.com/pyclashbot/py-clash-bot/fork)
+
+[⬆ Back to Top](#-py-clash-bot)
+
+</div>
